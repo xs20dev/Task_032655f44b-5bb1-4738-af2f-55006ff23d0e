@@ -11,13 +11,16 @@ if(filename != 0):
      file = open(filename, "r")
      line = file.readline()
      result = "["
+     isFirst = True
      while( line != ''):
           splitedline = line.split()  
           splitedline[1] = int(splitedline[1],16)
           line = file.readline()
           if(isprime(splitedline[1])):
-               result = result + splitedline[0] 
-               if(line != ''):
-                    result = result + ", "
+               if(isFirst):
+                    result = result + splitedline[0]
+                    isFirst = False
+               else:    
+                    result = result + ", " + splitedline[0]  
      file.close()
      print (result + "]")
