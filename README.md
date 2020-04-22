@@ -2,7 +2,7 @@
 Big prime numbers - check 
 
 Napisz program, który wypisze identyfikatory liczb pierwszych z pliku numbers.txt.
-##Przykładowe wywołanie programu:##
+## Przykładowe wywołanie programu: ##
     python check_primes.py numbers.txt
-##Wynik:##
+## Wynik: ##
     [1,2,100]
